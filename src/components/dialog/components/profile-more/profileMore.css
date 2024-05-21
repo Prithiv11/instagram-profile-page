@@ -1,0 +1,24 @@
+.profile-more-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-container {
+  width: 400px;
+  border-radius: 20px;
+  max-width: calc(100% - 40px);
+  overflow: hidden;
+  background-color: #262626;
+}
+.option {
+  user-select: none;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  border-top: rgb(54, 54, 54) 1px solid;
+  cursor: pointer;
+}
+.option:first-child {
+  border-top: transparent;
+}

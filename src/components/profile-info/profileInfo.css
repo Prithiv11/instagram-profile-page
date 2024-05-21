@@ -1,0 +1,147 @@
+.intraction-actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.profile-name {
+  font-size: 19px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.more {
+  padding-left: 15px;
+  cursor: pointer;
+  padding-bottom: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  box-sizing: border-box;
+}
+.profile-image {
+  flex-shrink: 0;
+  margin: 0 20px;
+  background-image: url(/public/assets/images/virat.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+.profileInfo-main-row {
+  user-select: none;
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+.verified-badge {
+  height: 20px;
+  width: 20px;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  background-image: url(../../assets/svg/verified-icon.svg);
+}
+.intract-btn {
+  width: 120px;
+  height: 32px;
+  cursor: pointer;
+  min-width: fit-content;
+  border-radius: 8px;
+  line-height: 30px;
+  color: white;
+  text-align: center;
+}
+.profile-actions {
+  position: relative;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.btn-follow {
+  background-color: #0095f6;
+}
+.btn-messaage {
+  background-color: #363636;
+}
+.profile-about-row {
+  padding: 15px;
+}
+.followers {
+  margin: 15px 0;
+  font-weight: bold;
+  font-size: 12px;
+  display: flex;
+  gap: 5px;
+  color: #a8a8a8;
+}
+.follower {
+  color: white;
+}
+
+@media (hover: hover) {
+  .btn-follow:hover {
+    background-color: #017dcf;
+  }
+  .btn-messaage:hover {
+    background-color: #282828;
+  }
+}
+.statistic-data {
+  text-align: center;
+}
+.profile-statistics {
+  padding: 10px 0;
+  border: 1px solid rgb(50, 50, 50);
+  border: 1px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+.data-title {
+  color: #797979;
+}
+@media (min-width: 768px) {
+  .profileinfo-wrapper {
+    position: relative;
+  }
+  .profile-actions {
+    align-self: baseline;
+    height: 100px;
+    flex-direction: row;
+    gap: 25px;
+  }
+  .profileInfo-main-row {
+    height: 220px;
+    gap: 50px;
+  }
+
+  .profile-image {
+    height: 150px;
+    width: 150px;
+  }
+  .more {
+    right: -50px;
+    position: absolute;
+  }
+  .intract-btn {
+    width: 90px;
+    height: 32px;
+  }
+  .profile-statistics {
+    position: absolute;
+    top: 80px;
+    left: 240px;
+    border: none;
+    width: 330px;
+    justify-content: space-between;
+    .statistic-data {
+      display: flex;
+      gap: 5px;
+    }
+  }
+  .profile-about-row {
+    position: absolute;
+    top: 115px;
+    left: 225px;
+  }
+}

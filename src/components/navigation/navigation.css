@@ -1,0 +1,93 @@
+.nav-wrapper {
+  align-items: center;
+  display: flex;
+  border-top: 1px solid #272727;
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+}
+.navigation-bar-items {
+  width: 100%;
+  display: flex;
+}
+.nav-bar-item {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+}
+.nav-bar-item-icon {
+  width: 100%;
+  transition: 0.3s;
+  cursor: pointer;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 23px;
+}
+.nav-bar-item-name {
+  display: none;
+}
+.profile {
+  height: 30px;
+  width: 30px;
+
+  border-radius: 25px;
+  background-image: url(../../../public/assets/images/virat.jpg) !important;
+}
+.dsktop {
+  display: none;
+}
+@media (min-width: 768px) {
+  .nav-wrapper {
+    border-right: 1px solid #272727;
+    height: 100%;
+    width: 80px;
+    left: 0;
+  }
+  .dsktop {
+    display: flex;
+  }
+  .navigation-bar-items {
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(100% - 100px);
+    align-items: center;
+  }
+  .nav-bar-item {
+    width: unset;
+  }
+  .nav-bar-item-icon {
+    height: 50px;
+    width: 50px;
+  }
+  @media (hover: hover) {
+    .nav-bar-item:hover {
+      background-color: #ffffff1a;
+      .nav-bar-item-icon {
+        transform: scale(1.08);
+      }
+    }
+  }
+}
+
+@media (min-width: 1264px) {
+  .nav-wrapper {
+    width: 240px;
+  }
+  .nav-bar-item {
+    width: calc(100% - 10px);
+    justify-content: flex-start;
+  }
+  .nav-bar-item-name {
+    display: block;
+  }
+  .profile {
+    margin: 10px;
+  }
+}
