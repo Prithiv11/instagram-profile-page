@@ -15,7 +15,7 @@ function App() {
       .get("https://jsonplaceholder.typicode.com/photos")
       .then((Userposts) => {
         axios
-          .get("http://jsonplaceholder.typicode.com/users/1")
+          .get("https://jsonplaceholder.typicode.com/users/1")
           .then(({ data }) => {
             setUserData({
               ...data,
